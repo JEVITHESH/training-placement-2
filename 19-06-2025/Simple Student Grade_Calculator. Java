@@ -1,0 +1,19 @@
+
+
+public class StudentGrade {
+    public static void main(String[] args) {
+        int[] marks = {80, 90, 75, 60, 85};
+        int sum = 0;
+
+        for(int mark : marks) {
+            sum += mark;
+        }
+
+        double average = sum / marks.length;
+
+        if (average >= 90) System.out.println("Grade: A");
+        else if (average >= 80) System.out.println("Grade: B");
+        else if (average >= 70) System.out.println("Grade: C");
+        else System.out.println("Grade: F");
+    }
+}
